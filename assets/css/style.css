@@ -7,11 +7,25 @@
 #navigation {
     display: flex;
     width: 50%;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items:center;
+    justify-content:space-evenly;
 }
 
-    
+ul#navigation_styling {
+    list-style-type: none;
+}
+
+
+li  {
+    float: left;
+    display:flex ;
+    justify-content:space-between;
+}
+
+#profile_picture  {
+    max-height: 400px;
+    max-width: 150px;
+}
 
 .subtitle_image  {
     display: flex;
@@ -37,20 +51,7 @@
     height: auto;
 }
 
-p #coding_spaceships  {
-    z-index: 1;
-}
-
-.workGridArea  {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    display: flex;
-    position: relative;
-    }
-
-#workGrid {
+.workGrid {
     margin: 0px 5%;
     display: grid;
     min-height: 500px;
@@ -63,7 +64,50 @@ p #coding_spaceships  {
     "react vue";
     }
 
+    .workGridArea  {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        display: grid;
+        cursor: pointer;
+        }
+
     #html  {
         grid-area: html;
-        background-image: url(./assets/images/html_image.png);
+        background-image: url("./assets/images/html_image.png");
+        background-color: red;
+    }
+
+    #css  {
+        grid-area: css;
+        background-image: url('./assets/images/html_image.png');
+        background-color: green;
+
+    }
+
+    #javascript  {
+        grid-area: javascript;
+        background-image: url("./assets/images/profile_picture.png"); 
+        background-color: blue;
+
+    }
+
+    #react  {
+        grid-area: react;
+        background-image: url(./assets/images/profile_picture.png);  
+        background-color: pink;
+
+    }
+
+    #vue  {
+        grid-area: vue;
+        background-image: url(./assets/images/html_image.png);  
+        background-color: black;
+
+    }
+
+
+    .work_heading  {
+        color: white;
     }
