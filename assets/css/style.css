@@ -74,13 +74,13 @@ li  {
 
     #html  {
         grid-area: html;
-        background-image: url(../assets/images/html_image.png);
+        background-image: url('../images/html_image.png');
         background-color: yellow;
     }
 
     #css  {
         grid-area: css;
-        background-image: url('.//assets/images/html_image.png');
+        background-image: url('../images/html_image.png');
         background-color: green;
 
     }
